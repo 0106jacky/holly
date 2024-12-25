@@ -1,0 +1,29 @@
+﻿@section Title {
+    聯絡我們
+}
+
+<div class="mt-5 container">
+    <h1>聯絡我們</h1>
+    <p>歡迎隨時聯繫我們！以下是我們的聯絡方式：</p>
+    <ul>
+        <li>電話：+123-456-7890</li>
+        <li>電子郵件：info@example.com</li>
+        <li>地址：新竹市北區西門街48號2樓</li>
+    </ul>
+    <p>您也可以通過下方表單向我們發送信息：</p>
+    <form method="post" action="/Home/SubmitContact">
+        <div class="mb-3">
+            <label for="name" class="form-label">姓名：</label>
+            <input type="text" class="form-control" id="name" name="Name" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">電子郵件：</label>
+            <input type="email" class="form-control" id="email" name="Email" required />
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">留言：</label>
+            <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</div>
